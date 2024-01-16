@@ -1,0 +1,57 @@
+/* login.scss */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  
+    h2 {
+      margin-top: 0;
+    }
+  
+    form {
+      label {
+        display: block;
+      }
+  
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  
+    .forgot-password {
+      text-align: center;
+      display: inline-block;
+      margin-top: 15px;
+      color: #007bff;
+    }
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 600px) {
+    .login-content {
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,11 @@
+.horo-title-home{
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .horo-title-home h1{
+    font-weight: 600;
+    color: #088178;
+  }
+
+  iframe#webpack-dev-server-client-overlay{display:none!important}

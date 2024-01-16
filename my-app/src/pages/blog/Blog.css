@@ -1,0 +1,37 @@
+.home-of-blog {
+    display: flex;
+  
+    .homeContainer-of-blog {
+      flex: 6;
+  
+      .widgets-of-blog,
+      .charts-of-blog {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+      }
+  
+      .charts-of-blog {
+        padding: 5px 20px;
+      }
+  
+      .listContainer-of-blog {
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 20px;
+  
+        .listTitle-of-blog {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  
+  .edit-here-blog{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 40px;
+  }

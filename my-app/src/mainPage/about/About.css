@@ -1,0 +1,147 @@
+.about-us-page-main{
+
+width: 100%;
+color: black;
+
+}
+
+.about-us-page{
+  margin-left: 20%;
+  margin-top: 100px;
+  width: 60%;
+}
+
+.brand-story{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.about-us-page-image1{
+  width: 55%;
+  min-width: 500px
+  /* background-color: blue; */
+}
+
+.about-us-page-image1-img{
+  width: 100%;
+
+}
+.about-us-page-paragraph{
+  max-width: 45%;
+  /* background-color: aqua; */
+}
+
+
+.about-us-page-paragraph p{
+
+  font-family: Poppins,sans-serif;
+  font-size: 14px;
+  color: #6084a4;
+  line-height: 1.8;
+}
+
+.about-us-page-paragraph h2{
+
+  margin-top: 0;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+  color: #088178;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600
+
+}
+
+.about-us-heading-2{
+  margin-bottom: 40px;
+}
+
+.about-us-heading-2 h1{
+  align-items: center;
+  text-align: center;
+  
+  margin-top: 40px;
+  
+  margin-bottom: .5rem;
+  line-height: 0.9;
+  color: #263836;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600
+}
+.introduction{
+
+  /* margin-bottom: 50px; */
+}
+.introduction h1{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  /* margin-bottom: .5rem; */
+  line-height: 0.9;
+  color: #263836;
+  font-weight: 500;
+  /* margin-bottom: 0; */
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 600
+
+  ;
+
+}
+.introduction p{
+  
+  font-family: Poppins,sans-serif;
+  font-size: 16px;
+  color: #6084a4;
+  line-height: 1.8;
+}
+
+@media (max-width: 1450px){
+  .about-us-page{
+    margin-left: 10%;
+    margin-top: 100px;
+    width: 70%;
+  }
+  .about-us-page-paragraph{
+    max-width: 60%;
+    /* background-color: aqua; */
+  } 
+}
+
+@media (max-width: 1200px){
+  .about-us-page{
+    margin-left: 10%;
+    margin-top: 100px;
+    width: 90%;
+  }
+  .about-us-page-paragraph{
+    max-width: 90%;
+    /* background-color: aqua; */
+  } 
+}
+
+@media (max-width: 868px) {
+  .about-us-page{
+    margin-left: 10%;
+    margin-top: 100px;
+    width: 80%;
+  }
+  
+  .brand-story{
+    display: inline;
+    margin-bottom: 50px;
+  }
+  .about-us-page-image1{
+    width: 100%;
+    min-width: 100%
+   
+  }
+  .about-us-page-paragraph{
+   max-width: 100%;
+    /* background-color: aqua; */
+  }
+}

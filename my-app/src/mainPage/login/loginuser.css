@@ -1,0 +1,87 @@
+.profiledetail{
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.loginuser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .loginuseritem {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-width: 300px;
+    display: flex;
+    height: 100px;    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: .1px solid #a5d6a7;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .loginuseritem:hover {
+    background-color: #7ce966; /* Change to the desired hover background color */
+  }
+
+  .loginuseritem h4{
+    font-weight: 430;
+    text-align: center;
+  }
+  .loginuseritem1 {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-width: 300px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: .1px solid #a5d6a7;
+    height: 100px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .loginuseritem1:hover {
+    background-color: #7ce966; /* Change to the desired hover background color */
+  }
+
+  .loginuseritem1 h4{
+    font-weight: 430;
+    text-align: center;
+  }
+
+.temp{
+    margin-top: 10px;
+}
+
+  /* Responsive Styling */
+  @media (min-width: 768px) {
+    .loginuser {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .loginuseritem {
+      width: 150px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .loginuseritem {
+      width: 200px;
+    }
+  }
+  
+  /* Add more media queries as needed for other screen sizes */
+  

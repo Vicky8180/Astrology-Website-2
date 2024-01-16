@@ -1,0 +1,37 @@
+/* .youtube-main{
+  width: 80%;
+  background-color: aqua;
+  margin-left: 10%;
+}
+
+.youtube-1{
+ width: 400px;
+}
+
+.youtube-1-contain{
+ 
+  background-color: aqua;
+} */
+
+.youtube-main {
+  width: 80%;
+  background-color: aqua;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  /* Optional: Add padding, margin, or other styling */
+}
+
+.youtube-1 {
+  width:40%; /* Two items per row with some spacing */
+  margin-bottom: 20px; /* Adjust spacing between rows */
+  /* Optional: Add other styling for the youtube-1 elements */
+}
+
+/* Media query for responsiveness on smaller devices */
+@media screen and (max-width: 768px) {
+  .youtube-1 {
+      width: calc(100% - 10px); /* Full width for single item per row */
+  }
+}

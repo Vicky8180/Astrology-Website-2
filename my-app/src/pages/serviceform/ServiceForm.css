@@ -1,0 +1,152 @@
+.service-form{
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+.service-form-left{
+width: 60%;
+padding: 40px;
+}
+.service-form-right{
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+ 
+    
+}
+.servicelist-img-form{
+  display: flex;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+.service-from-right-img {
+    flex: 1;
+    text-align: center;
+
+   
+  }
+  .servicelist-form-button{
+     margin-top: 35%;
+
+  }
+  .service-form-detail{
+  display: flex;
+  width: 100%;
+  /* background-color: aqua; */
+  justify-content: space-between;
+}
+
+.service-form-detail-1{
+  width: 60%;
+}
+.service-form-detail-2{
+  margin-top: 20px;
+  /* background-color: aqua; */
+  margin-right: 10%;
+}
+  .servicelist-form-button button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+
+  
+  .servicelist-form-Title{
+    width: 90%;
+    font-size: 24px;
+    color: gray;
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .servicelist-form-link{
+      text-decoration: none;
+      color: green;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+.service-from-right-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .servicelist-formInput {
+    width: 40%;
+    /* margin-left: 30%;
+    margin-top: 90px; */
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+
+  }
+
+  @media screen and (max-width: 1208px) {
+    .servicelist-form-button {
+      text-align: center;
+      margin-top: 20px;
+      padding-left: 0px;
+      margin-left: 0%;
+      margin-top: 55%;
+    }
+  
+    .servicelist-form-button button {
+      width: 100%; 
+    }
+  
+  }
+  @media screen and (max-width: 768px) {
+    .service-form {
+      flex-direction: column; 
+    }
+  
+    .service-form-left,
+    .service-form-right {
+      width: 100%; 
+      padding: 20px;
+    }
+  
+   
+    .servicelist-form-button {
+      text-align: center;
+      margin-top: 20px;
+      padding-left: 0px;
+      margin-left: 0%;
+    }
+  
+    .servicelist-form-button button {
+      width: 100%; 
+    }
+  }
+  
+
+
+  
+
+  
+
+  

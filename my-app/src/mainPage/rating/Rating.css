@@ -1,0 +1,182 @@
+.thin-line {
+    border: none;
+    border-top: 1px solid #000; 
+    
+  }
+
+  .rating-1 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    min-width: 300px;
+margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 300px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rating-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rating-name {
+    font-weight: bold;
+  }
+  
+  .rating-rate {
+    display: flex;
+    align-items: center;
+    color: #ffc107; /* Adjust the color to your liking */
+  }
+  
+  .rating-para {
+    margin-top: 10px;
+    overflow: hidden; 
+
+  word-wrap: break-word;
+  height: 200px;
+
+height: 200px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  }
+
+  .rating-first-heading{
+    text-align: center;
+    margin-bottom: 50px;
+    /* font-size: 16px; */
+    font-weight: 600;
+    color: #088178;
+    /* margin-bottom: -50px; */
+    margin-top: 40px;
+    /* background-color: rgb(31, 107, 174); */
+  }
+  
+.ratings-1 {
+    /* background-color: #f9f9f9; */
+    padding: 20px;
+    padding-top: 60px;
+    margin: 10px;
+    max-width: 80%;
+    margin-left: 10%;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    height: 500px;
+    /* background-color: #f9f6f6; */
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    overflow: hidden; /* Hide the overflowing content */
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .thin-line {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .rating-content {
+    display: flex;
+    flex-wrap: nowrap; 
+    /* overflow: hidden; */
+    animation: scroll 15s linear infinite; 
+    /* margin-bottom: 50px; */
+  }
+  /* .rating-content{
+   
+  } */
+  
+  /* Keyframes for the scrolling animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%); /* Scroll the content horizontally */
+    }
+  }
+
+  
+  /* Media query for smaller screens */
+ 
+  
+  
+  .rating-content:hover {
+    animation-play-state: paused; 
+    
+  }
+
+  .rating-1:hover{
+    background-color: #ffac07;
+    color: #ffffff;
+  }
+
+  /* @media (max-width: 768px) {
+    .rating-1 {
+      flex-direction: column;
+    }
+  }
+   */
+
+
+  @media (max-width: 768px) {
+    .rating-content {
+      flex-direction: row;
+      align-items: center;
+      animation: none; 
+      display: flex;
+      overflow-x: auto;
+      /* white-space: nowrap; */
+    }
+  }
+
+  .rating-para {
+    margin-top: 10px;
+    overflow: hidden; 
+
+  word-wrap: break-word;
+  height: 200px;
+
+height: 200px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  }
+
+  @media (max-width: 458px) {
+
+    .rating-content {
+      flex-direction:row;
+      display: flex;
+      overflow-x: auto; 
+      
+      animation: none; 
+    }
+
+    .ratings-1 {
+      /* background-color: #f9f9f9; */
+      padding: 20px;
+      margin: 10px;
+      max-width: 95%;
+      margin-left: 2.5%;
+      border-radius: 5px;
+      margin-bottom: 50px;
+      height: 400px;
+      /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+      overflow: hidden; /* Hide the overflowing content */
+    }
+}

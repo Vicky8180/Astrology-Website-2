@@ -1,0 +1,17 @@
+.userlist{
+    width: 30%;
+    height: 750px;
+    background-color: aqua;
+   
+}
+
+.adminchat{
+    display: flex;
+    width: 60%;
+    height: 900px;
+    background-color: blueviolet;
+    align-items: center;
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+}
