@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to our Astrology Chat Platform, a dynamic website designed to provide users with a personalized and interactive experience with astrologers. This platform offers a range of features aimed at enhancing user engagement and satisfaction.
+Welcome to Astrology Chat Platform, a dynamic website designed to provide users with a personalized and interactive experience with astrologers. This platform offers a range of features aimed at enhancing user engagement and satisfaction.
 
 ## Key Features
 
