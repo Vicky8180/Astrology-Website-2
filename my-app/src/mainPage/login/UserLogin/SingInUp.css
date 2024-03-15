@@ -50,8 +50,8 @@
   
   .buttonSignInUp {
     border-radius: 20px;
-    border: 1px solid #ff4b2b;
-    background-color: #ff4b2b;
+    border: 1px solid rgb(254 119 16);
+    background-color:rgb(254, 159, 16);
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
@@ -71,7 +71,9 @@
   
   button.ghost {
     background-color: transparent;
-    border-color: #ffffff;
+    /* border-color: #ffffff; */
+    border-radius: 22px;
+    border: 1px solid rgb(255, 255, 255);
   }
   
   form {
@@ -166,9 +168,9 @@
   }
   
   .overlay {
-    background: #ff416c;
-    background: -webkit-linear-gradient(to right, #ff4b2b, #ff416c);
-    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    background: #FE7710;
+    background: -webkit-linear-gradient(to right, #FE7710 #ff4b2b);
+    background: linear-gradient(to right, #FE7710 #ff4b2b);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;

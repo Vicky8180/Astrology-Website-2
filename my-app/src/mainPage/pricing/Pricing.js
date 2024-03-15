@@ -22,12 +22,48 @@ function App() {
       serviceDetail: ["Weekly Horoscope", "Birth Chart Readings", "24*7 doubt"],
     }
   ;
+  const item2 = 
+  {
+    image:
+      "https://publish.purewow.net/wp-content/uploads/sites/2/2022/03/types-of-astrology.jpg",
+    serviceDescription:
+      "Horoscopes are astrological forecasts based on the position of celestial bodies at the time of an individual's birth. They're commonly associated with the twelve zodiac signs, each linked to specific personality traits and characteristics. These forecasts offer insights into potential life events, personal traits, and general trends expected for individuals based on their zodiac sign. Astrologers interpret planetary movements and their alignment with the zodiac to predict how these might influence different aspects of life such as relationships, career, health, and more. While some people find horoscopes entertaining or use them as a guide for decision-making, others view them with skepticism. Horoscopes are a part of astrological traditions and can be found in various forms, from daily predictions in newspapers to personalized readings based on birth charts. Ultimately, their significance varies widely among individuals, ranging from a fun curiosity to a belief system guiding life choices.",
+    serviceName: "Popular Plan",
+    rating: 5,
+    pricePerMinute: 999,
+    plan: true,
+    recharge:false,
+    serviceDetail: ["Weekly Horoscope", "Birth Chart Readings", "24*7 doubt", "Career Guidance","Compatibility Analysis"],
+  }
 
+  const item3 = 
+  {
+    image:
+      "https://publish.purewow.net/wp-content/uploads/sites/2/2022/03/types-of-astrology.jpg",
+    serviceDescription:
+      "Horoscopes are astrological forecasts based on the position of celestial bodies at the time of an individual's birth. They're commonly associated with the twelve zodiac signs, each linked to specific personality traits and characteristics. These forecasts offer insights into potential life events, personal traits, and general trends expected for individuals based on their zodiac sign. Astrologers interpret planetary movements and their alignment with the zodiac to predict how these might influence different aspects of life such as relationships, career, health, and more. While some people find horoscopes entertaining or use them as a guide for decision-making, others view them with skepticism. Horoscopes are a part of astrological traditions and can be found in various forms, from daily predictions in newspapers to personalized readings based on birth charts. Ultimately, their significance varies widely among individuals, ranging from a fun curiosity to a belief system guiding life choices.",
+    serviceName: "Advance Plan",
+    rating: 5,
+    pricePerMinute: 1299,
+    plan: true,
+    recharge:false,
+    serviceDetail: ["Weekly Horoscope", "Birth Chart Readings", "24*7 doubt", "Career Guidance","Compatibility Analysis","Financial Astrology","Astrological Remedies"],
+  }
   const movetoAboutProduct=()=>{
 //    navigate('/aboutservices', { state: { item } })
 dispatch(priceData(item))
 navigate('/aboutservices')
   }
+  const movetoAboutProduct2=()=>{
+    //    navigate('/aboutservices', { state: { item } })
+    dispatch(priceData(item2))
+    navigate('/aboutservices')
+      }
+      const movetoAboutProduct3=()=>{
+        //    navigate('/aboutservices', { state: { item } })
+        dispatch(priceData(item3))
+        navigate('/aboutservices')
+          }
   return (
     <div className="price-all-div">
       <section id="pricing" class="pricing-content section-padding">
@@ -100,7 +136,7 @@ navigate('/aboutservices')
                   <li>Career Guidance</li>
                   <li>24 * 7 doubt </li>
                 </ul>
-                <a href="#/">Get start</a>
+                <a href="#/" onClick={movetoAboutProduct2}>Get start</a>
               </div>
             </div>
             <div
@@ -134,7 +170,7 @@ navigate('/aboutservices')
                   <li>Astrological Remedies</li>
                   <li>Financial Astrology</li>
                 </ul>
-                <a href="#/">Get start</a>
+                <a href="#/"  onClick={movetoAboutProduct3}>Get start</a>
               </div>
             </div>
           </div>

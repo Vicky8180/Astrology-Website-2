@@ -26,6 +26,8 @@ html {
     background-color: rgb(255, 255, 255);
   
   }
+
+
   .horo-title-home h1{
     font-weight: 600;
     color: #088178;
@@ -204,16 +206,16 @@ padding-left: 19%;
     color: #088178;
     /* font-weight: 700; */
     font-size: 49px;
-    margin-left: -10px;
+    margin-left: 10px;
 }
 #hero h2 {
-    color: #ff8f8f;
+    color: hsl(35, 100%, 54%);
     /* font-weight: 700; */
-    font-size: 39px;
+    font-size: 37px;
 }
 
 #hero button {
-   
+/*    
     background-color: transparent;
     color: #1a1a1a;
     border: 0;
@@ -221,7 +223,21 @@ padding-left: 19%;
     background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 15px; */
+
+
+
+    font-weight: 900;
+    border-radius: 20px;
+    /* border: 1px solid rgb(254 119 16); */
+    background-color:rgb(254, 159, 16);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
 }
 #hero button:hover{
     color: #088178;

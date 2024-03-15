@@ -19,11 +19,10 @@ const UserSchema= new mongoose.Schema({
         required:true
     },
   
-    phone:{
-        type:Number,
-        unique:true,
-        default:1212,
-    },
+    // phone:{
+    //     type:Number,
+    //     unique:true,
+    // },
      transitions:[{
         type:String,
         
@@ -38,7 +37,7 @@ const UserSchema= new mongoose.Schema({
      },
      aviaibleBalance:{
         type:Number,
-        default:50
+        default:20
        
      }
 

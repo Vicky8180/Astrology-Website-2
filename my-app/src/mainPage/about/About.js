@@ -55,7 +55,7 @@ export default function About() {
           <section className="brand-story">
             
             <div className="about-us-page-paragraph">
-              <h2>Why Dr.Anoop Pandit ?</h2>
+              <h2>Why Dr. Anoop Pandit ?</h2>
               <p>
                 At [Your Website Name], we delve into the boundless universe to
                 unravel the celestial map that guides your life’s journey. Our

@@ -27,6 +27,12 @@ const ContactForm = () => {
     setEmail('');
     setMessage('');
     setPhone('');
+    if(name===''|| email===''||message===''||phone===''){
+    alert("empty field")
+    }else{
+      alert("We Received your query")
+    }
+    
   };
 
   return (
@@ -43,7 +49,7 @@ const ContactForm = () => {
   <div className='contact'>
       <div className='contact1'> 
       <h1>Get In Touch</h1>
-    <form onSubmit={handleSubmit}>
+    <form >
       
         <input type="text" placeholder='Name' value={name} onChange={(e) => setName(e.target.value)} />
       
@@ -61,25 +67,25 @@ const ContactForm = () => {
       <br />
       
     </form>
-    <button className="contact-btn-12" type="submit">Send Message</button>
+    <button className="contact-btn-12" onClick={handleSubmit}>Send Message</button>
     </div> 
     <div className='contact2'>
         <h2>Contact us</h2>
         <li>
           <LocationOnIcon/>
-            <label>Address:</label><p className='contact-us-details'>Jalandher,Punjab,144401</p>
+            <label>Address:</label><p className='contact-us-details'>Saket Nagar,Deoria,U.P,274001</p>
       </li>
       <li>
         <PhoneInTalkIcon/>
-            <label>Phone:</label><p className='contact-us-details'>94487984200</p>
+            <label>Phone:</label><p className='contact-us-details'>8299891902</p>
       </li>
       <li>
         <EmailIcon/>
-            <label>Email:</label><p  className='contact-us-details'>priyanshu@gmail.com</p>
+            <label>Email:</label><p  className='contact-us-details'>vyadav99x1@gmail.com</p>
       </li>
       <li>
         <WhatsAppIcon/>
-            <label>Website:</label><p className='contact-us-details'>example.com</p>
+            <label>Website:</label><p className='contact-us-details'>https://github.com/Vicky8180</p>
       </li>
 
     </div>

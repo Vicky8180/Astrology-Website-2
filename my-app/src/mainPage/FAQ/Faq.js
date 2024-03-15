@@ -15,17 +15,17 @@ export default function Faq() {
     }
   const GeneralData = [
     {
-      heading: "Where does it come from ?",
-      para: "If several languages coalesce, the grammar of the resulting language is more simpleand regular than that of the individual languages. The new common language will be more simple and regular than the existing",
+      heading: "Is astrology scientific ?",
+      para: "Astrology is considered a pseudoscience by the scientific community because its principles and practices lack empirical evidence and cannot be reliably tested through scientific methods. However, astrology continues to be practiced and valued by many individuals for its cultural, spiritual, and personal significance.",
     },
     {
-      heading: "Why do we use it ?",
-      para: "If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing",
+      heading: "Is astrology compatible with religion?",
+      para: "Astrology is compatible with some religious beliefs and practices but may conflict with others. It is practiced by individuals of various faiths and spiritual traditions, and its acceptance varies among different cultures and religious communities",
     },
 
     {
-      heading: "Where does it come from ?",
-      para: "If several languages coalesce, the grammar of the resulting language is more simpleand regular than that of the individual languages. The new common language will be more simple and regular than the existing",
+      heading: "What are zodiac signs?",
+      para: "Zodiac signs are twelve equal divisions of the celestial ecliptic, each representing different personality traits and characteristics. They are based on the position of the Sun at the time of birth and are commonly used in astrology to categorize individuals and make predictions.",
     },
 
     {

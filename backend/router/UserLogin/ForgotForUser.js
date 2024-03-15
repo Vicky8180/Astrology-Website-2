@@ -17,7 +17,7 @@ function sendmail(data, callback) {
     service: 'gmail',
     auth: {
       user: 'vyadav99x1@gmail.com',
-      pass: 'qpmt ueop vpxn nrtd',
+      pass: 'ixtj iycw lxxm olet',
     },
   });
 

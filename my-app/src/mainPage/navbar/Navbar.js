@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./newsone.css"
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
+import {  useSelector } from "react-redux/es/hooks/useSelector";
 import path from "./finallogo.png"
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 const Header = () => {

@@ -42,6 +42,7 @@ const CreateChat = require("./router/chat/Chat")
 const SaveMessages = require("./router/chat/Message")
 const GetMessages = require("./router/chat/GetMessage")
 const UpdateUserAmount = require("./router/UserLogin/UpdateAmount")
+const Getindividualtrans = require("./router/transition/GetIndividualTrans")
 app.use(cors({
     origin: 'http://localhost:3000',
     credentials: true,
@@ -77,6 +78,7 @@ app.use('/api', CreateChat);
 app.use('/api', SaveMessages);
 app.use('/api', GetMessages);
 app.use('/api', UpdateUserAmount);
+app.use('/api', Getindividualtrans);
 
 app.get("/api/getkey", (req, res) =>
   res.status(200).json({ key: process.env.RAZORPAY_API_KEY })

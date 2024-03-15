@@ -121,7 +121,12 @@ export default function TimeLeft({ timeLeft12 }) {
   function timeToSeconds(time) {
     const [hours, minutes] = time.split(':').map(Number);
     return (hours * 60) + minutes;
-  }
+  }console.log("timeLeft12")
+console.log(timeLeft12)
+
+
+
+
 
   const updateUserAmount = async () => {
     const t2 = timeToSeconds(initialTimeRef.current);

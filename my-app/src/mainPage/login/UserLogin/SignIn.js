@@ -28,15 +28,16 @@ function SignInForm() {
       email:email,
       password:password
     })
-    console.log(response.data.data.aviaibleBalance)
-    dispatch(availbleBalance(response.data.data.aviaibleBalance))
-    if(response.data.success){
+    console.log(response)
+    // dispatch(availbleBalance(response.data.data.aviaibleBalance))
+    if(response.data.success == true){
+      dispatch(availbleBalance(response.data.data.aviaibleBalance))
       alert(`You are login with email: ${email}`);
       dispatch(userloggedIn(true));
       dispatch(userData(response.data));
       navigate("/loginuser")
-    }else {
-      alert("not sign in")
+    } else {
+      alert("Wrong credentials")
     }
 
       

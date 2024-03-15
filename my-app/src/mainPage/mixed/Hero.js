@@ -6,11 +6,12 @@ function Hero() {
     
 
    
-        <h2>Super value deals</h2>
-        <h1>On all products</h1>
+       
+        <h1>Divine Guidance</h1>
+        <h2>Celestial Secrets Unveiled</h2>
         <p>Save more with coupons & up tp 70% off!</p>
-        <button>Shop Now!</button>
-        <div class="elfsight-app-a30f4c4f-3d29-431e-a604-89883db99bbc" data-elfsight-app-lazy></div>
+        <button className='polpol'>Shop Now!</button>
+        {/* <div class="elfsight-app-a30f4c4f-3d29-431e-a604-89883db99bbc" data-elfsight-app-lazy></div> */}
 
     </section>
   );

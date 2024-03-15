@@ -269,7 +269,7 @@ minutes=tt[0].time;
                       </div>
                     </div>
                   </li>
-                  <li className="checkout-item">
+                  {/* <li className="checkout-item">
                     <div className="avatar checkout-icon p-1">
                       <div className="avatar-title rounded-circle bg-primary">
                         <i className="bx bxs-truck text-white font-size-20"></i>
@@ -394,7 +394,7 @@ minutes=tt[0].time;
                         </div>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                 </ol>
               </div>
             </div>

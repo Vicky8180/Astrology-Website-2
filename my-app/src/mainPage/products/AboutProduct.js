@@ -210,7 +210,7 @@ useEffect(()=>{
           </div>
           <div className="a-pro-right-buttons">
             <button className="a-pro-right-call-now" onClick={movetocheckout}>
-              <LocalPhoneOutlinedIcon /> Call Now
+              <LocalPhoneOutlinedIcon /> Enroll
             </button>
           </div>
        
@@ -236,7 +236,7 @@ useEffect(()=>{
           </div>
         </div>
       </div>
-<AlikeProduct/>
+{/* <AlikeProduct/> */}
 <Footerbarir/>
 <Footer/>
     
