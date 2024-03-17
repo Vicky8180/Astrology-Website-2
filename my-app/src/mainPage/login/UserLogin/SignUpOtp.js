@@ -17,7 +17,7 @@ export default function StarterLogin() {
 const OtpMatch=async(e)=>{
   e.preventDefault(); 
          try {
-          const response= await axios.post("http://localhost:5000/api/otpmacting",{
+          const response= await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/otpmacting`,{
              adminEmail:data.state.state.email,
              otp:otp
           })
@@ -26,7 +26,7 @@ const OtpMatch=async(e)=>{
           if(response.data.success===true){
 
             try {
-              const response2= await axios.post("http://localhost:5000/api/createuser",{
+              const response2= await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/createuser`,{
                 userEmail:data.state.state.email,
                 userName:data.state.state.name,
                 password:data.state.state.password

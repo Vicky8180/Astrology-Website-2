@@ -84,7 +84,7 @@ export const userColumns = [
 
 export const GetHoroscope=async()=>{
 
-      const data = await axios.get('http://localhost:5000/api/fetchhoro')
+      const data = await axios.get(`${process.env.REACT_APP_BASE_URL_PORT}/api/fetchhoro`)
       console.log(data);
 
 }

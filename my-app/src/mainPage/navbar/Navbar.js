@@ -25,6 +25,9 @@ const GoToHome=()=>{
  const GoToLogin=()=>{
   navigate('/loginuser')
  } 
+ const GoToSignIn=()=>{
+  navigate('/starterlogin')
+ } 
  const GoToContact=()=>{
   navigate('/contact')
  }
@@ -52,6 +55,8 @@ const [click, setClick] = React.useState(false);
 
   const handleClick = () => setClick(!click);
   const Close = () => setClick(false);
+
+
 
   return (
 <>
@@ -87,7 +92,7 @@ const [click, setClick] = React.useState(false);
       <Avatar alt="Travis Howard" src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703203200&semt=ais" />
    
     </Stack>
-</li> :<li><a href="/starterlogin">Sign In</a></li>
+</li> :<li><a onClick={GoToSignIn}>Sign In</a></li>
 
           }
         

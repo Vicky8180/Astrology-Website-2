@@ -1,0 +1,36 @@
+.no-transition-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    flex-direction: column; 
+  }
+  
+  .message_1212 {
+    font-size: 24px;
+    padding: 20px;
+    background-color: #ffffff;
+    /* border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .button_no{
+    
+    font-weight: 900;
+    border-radius: 20px;
+    background-color:rgb(254, 159, 16);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }
+  @media (max-width: 768px) {
+    .message {
+      font-size: 18px;
+      padding: 15px;
+    }
+  }
+  

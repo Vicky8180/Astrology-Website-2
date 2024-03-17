@@ -31,7 +31,7 @@ export default function Blog() {
           {/* <Table  /> */}
         
         
-          <ServiceList   rows={rows}/>
+          {/* <ServiceList   rows={rows}/> */}
 
         
          

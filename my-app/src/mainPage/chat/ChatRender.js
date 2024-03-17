@@ -1,6 +1,8 @@
 import React from 'react';
 import './ChatCss.css';
 import {  useSelector } from 'react-redux/es/hooks/useSelector';
+import ChatPopUp from "./chatPopup"
+
 export default function ChatRender() {
 
   const message=useSelector((state)=>state.messageArray);
@@ -33,6 +35,7 @@ console.log(message)
       </div>
     ))}
   </div>
+  <ChatPopUp/>
       </div>
     
     </>

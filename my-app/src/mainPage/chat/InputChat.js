@@ -16,7 +16,7 @@ export default function InputChat() {
   const dispatch = useDispatch();
   console.log(stopchatx2)
   useEffect(() => {
-    const userSocket = io("http://localhost:5000/chatuser");
+    const userSocket = io(`${process.env.REACT_APP_BASE_URL_PORT}/api/chatuser`);
     userSocket.emit("sendMessage", "Message sent from user");
     userSocket.on("receiveMessage", (data) => {
       console.log("Received message from server:", data);
@@ -39,12 +39,14 @@ export default function InputChat() {
       };
 
       dispatch(messageArray([item]));
+      
 
-      const res = await axios.post("http://localhost:5000/api/messages", {
+      const res = await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/messages`, {
         chat: chatdata[0][0]._id,
         textContent: textmessage,
         sender: userdata[0].data._id,
       });
+     setTextmessage('');
 
       console.log(res);
     } catch (error) {
@@ -63,7 +65,7 @@ export default function InputChat() {
           const temp = chatdata[0];
           console.log(temp[0]._id);
           const response = await axios.get(
-            `http://localhost:5000/api/getmessages?chatId=${temp[0]._id}`
+            `${process.env.REACT_APP_BASE_URL_PORT}/api/getmessages?chatId=${temp[0]._id}`
           );
 
           if (stopchatx2===false) {
@@ -86,6 +88,14 @@ export default function InputChat() {
     };
   }, [chatdata]);
 
+  const handleKeyPress = (event) => {
+    // Check if the Enter key is pressed (key code 13)
+    console.log("enetr")
+    if (event.key === 'Enter') {
+      sendMessage();
+    }
+  };
+
   return (
     <>
       <div className="inputchat">
@@ -93,8 +103,9 @@ export default function InputChat() {
           type="text"
           value={textmessage}
           onChange={(e) => setTextmessage(e.target.value)}
+          onKeyUp={handleKeyPress}
         />
-        <button onClick={sendMessage}>send</button>
+        <button onClick={sendMessage}  >send</button>
       </div>
     </>
   );

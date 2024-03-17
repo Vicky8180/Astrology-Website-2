@@ -19,7 +19,7 @@ export default function Chat() {
     const fetchData = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/chatcreated",
+          `${process.env.REACT_APP_BASE_URL_PORT}/api/chatcreated`,
           {
             chatName: userData[0].data.userEmail,
             users: [userData[0].data._id, "65872860503fbc9ac01609b9"],
@@ -28,13 +28,12 @@ export default function Chat() {
 
         dispatch(chatData(response.data.data));
         console.log(response.data.data);
-        // const initialBalance = Math.round(userData[0].data.aviaibleBalance);
+        
         const initialBalance = availbleBalance1
         
          
         setInitialTime(initialBalance / 10 * 60);
         setTimeLeft1(initialBalance / 10 * 60);
-        // calculateRemainingTime(initialBalance,10);
       } catch (error) {
         console.error("Error creating chat:", error);
       }
@@ -51,7 +50,7 @@ export default function Chat() {
     const timer = setInterval(() => {
       if (timeLeft1 > 0) {
         setTimeLeft1((prevTime) => prevTime - 1);
-        dispatch(timeLeft(formatTime(timeLeft1))); // Dispatch timeLeft action here
+        dispatch(timeLeft(formatTime(timeLeft1))); 
       } else {
         clearInterval(timer);
       }
@@ -63,7 +62,6 @@ export default function Chat() {
   }, [timeLeft1, dispatch]);
 
   const formatTime = (seconds) => {
-    // console.log(seconds)
     const integerNumber = parseInt(seconds)
     const minutes = Math.floor(integerNumber / 60);
     const remainingSeconds = integerNumber % 60;
@@ -79,7 +77,7 @@ export default function Chat() {
     <>
       <div className='chat'>
         <div className='astrologername'>
-          <div><h3>{userData[0].data.userName}</h3></div>
+          <div><h3>Astrologer</h3></div>
           <div>Online</div>
         </div>
         <div>

@@ -15,7 +15,7 @@ export default function ChangePassword() {
 
   const updatePassword=async()=>{
 
-    const data= await axios.post('http://localhost:5000/api/updateforgot',{
+    const data= await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/updateforgot`,{
 pass1:pass1,
 pass2:pass2,
 adminEmail:email

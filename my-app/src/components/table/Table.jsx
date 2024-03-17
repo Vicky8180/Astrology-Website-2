@@ -14,7 +14,7 @@ const [data,setData]=useState([]);
   
     const fetch= async()=>{
 
-      const info= await axios.get('http://localhost:5000/api/gettransition');
+      const info= await axios.get(`${process.env.REACT_APP_BASE_URL_PORT}/api/gettransition`);
      setData([...(info.data.data)])
 
     }

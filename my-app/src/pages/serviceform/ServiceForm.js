@@ -45,7 +45,7 @@ console.log(serviceDet)
 
 // const url = `http://localhost:5000/api/createservice?serviceDetail=${serviceDet}`
 
-const data = await axios.post('http://localhost:5000/api/createservice',  formData, {
+const data = await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/createservice`,  formData, {
   headers: {
     'Content-Type': 'multipart/form-data', // Set content type for FormData
   },

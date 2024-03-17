@@ -135,7 +135,7 @@ console.log(timeLeft12)
     console.log(timeToSeconds(initialTimeRef.current));
     console.log(t1);
     try {
-      const response2 = await axios.put("http://localhost:5000/api/updateuseramount", {
+      const response2 = await axios.put(`${process.env.REACT_APP_BASE_URL_PORT}/api/updateuseramount`, {
         userEmail: userData[0].data.userEmail,
         aviaibleBalance: t1.toFixed(2),
       });

@@ -6,6 +6,7 @@ import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { productInputs, userInputs } from "./formSource";
 import "./style/dark.scss";
+import NotFoundPage from "../src/pageNotFound"
 import { useContext, useEffect } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import ChangePassword from "./components/forgot/ChangePassword";
@@ -95,8 +96,8 @@ function App() {
   return (
     <>
    
-  <div className={darkMode ? "app dark" : "app"}>
-      <BrowserRouter>
+  <div className={ darkMode ? "app dark" : "app"}>
+      {/* <BrowserRouter>
         <Routes>
 
           <Route exact path='/' element={<FirstPage/>}/>
@@ -137,7 +138,54 @@ function App() {
             
 
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+
+
+
+      <BrowserRouter >
+  <Routes>
+    <Route exact path='/' element={<FirstPage />} />
+    <Route path='/about' element={<About />} />
+    <Route path='/contact' element={<ContactBhim />} />
+    <Route path='/services' element={<Product />} />
+    <Route path='/horodetail' element={<HoroDetail />} />
+    <Route path='/aboutservices' element={<AboutProduct />} />
+    <Route path='/paymentcheckout' element={ans > 0 ? <Payment /> : <Loader />} />
+    <Route path='/paymentsuccessfull' element={<PaymentSuccessfull />} />
+    <Route path='/loginuser' element={userloggedIn ? <LoginUser /> : <FirstPage />} />
+    <Route path='/transition' element={<Transition />} />
+    <Route path='/chatuser' element={<ChatUser />} />
+    <Route path='/starterlogin' element={<StarterLogin />} />
+    <Route path='/signupotp' element={<SignUpOtp />} />
+    <Route path='/recharge' element={<Recharge />} />
+
+    <Route path="/admin/*">
+  {isauth ? (
+    <>
+      <Route index element={<Home />} />
+      <Route path="list" element={<List />} />
+      <Route path="new" element={<New inputs={userInputs} title="Add New User" />} />
+      <Route path="servicelist" element={<ServiceList />} />
+      <Route path="serviceform" element={<ServiceForm />} />
+      <Route path="profile" element={<Profile />} />
+      <Route path="updatepassword" element={<UpdatePassword />} />
+      <Route path="editprofile" element={<EditProfile />} />
+      <Route path="order" element={<Orders />} />
+      <Route path="blog" element={<Blog />} />
+      <Route path="chat" element={<ChatAdmin />} />
+    </>
+  ) : (
+    <Route index element={<Login />} /> 
+  )}
+</Route>
+
+
+    {/* If none of the above routes match, show a 404 page */}
+    <Route path="*" element={<NotFoundPage />} />
+  </Routes>
+</BrowserRouter>
+
      
     </div>
     {/* <Single/> */}

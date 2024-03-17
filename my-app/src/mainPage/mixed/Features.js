@@ -25,7 +25,7 @@ const dispatch = useDispatch();
   useEffect(() => {
     const getHoroscope = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/fetchhoro');
+        const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL_PORT}/api/fetchhoro`);
         setHoroscope(data.data || []);
       } catch (error) {
         console.error("Error fetching horoscope data:", error);

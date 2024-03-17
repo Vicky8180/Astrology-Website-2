@@ -10,6 +10,7 @@ const bodyParser = require('body-parser');
 const socketIo = require("socket.io");
 const http = require('http');
 // const server = http.createServer(app);
+const path = require("path");
 
 dotenv.config();
 
@@ -88,7 +89,23 @@ app.use('/api', PaymentVerification);
 
 
 
-const server=app.listen(5000,()=>{
+// app.use(express.static(buildpath));
+
+// Define a wildcard route handler to serve the main HTML file for all routes
+// app.get('/', (req, res) => {
+//   res.sendFile(path.join(buildpath, 'index.html'));
+// });
+
+
+const _dirname = path.dirname("");
+const buildpath = path.join(_dirname, "../my-app/build");
+app.use(express.static(buildpath));
+
+// app.get('/', function (req, res) {
+//   res.sendFile(path.join(__dirname, '../my-app/build', 'index.html'));
+// });
+
+const server=app.listen(process.env.PORT || 5000,()=>{
     console.log("its running ")
 })
 

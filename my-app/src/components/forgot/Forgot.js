@@ -12,7 +12,7 @@ export default function Forgot() {
   };
 
   const checkEmail = async () => {
-    const data = await axios.post("http://localhost:5000/api/forgot", {
+    const data = await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/forgot`, {
       adminEmail: email,
     });
 

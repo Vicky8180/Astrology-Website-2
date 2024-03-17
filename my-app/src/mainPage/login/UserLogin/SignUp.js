@@ -35,7 +35,7 @@ function SignUpForm() {
   var response
   try {
     if(state.email!=="" && state.name!=="" && state.password!==""){
-      response= await axios.post("http://localhost:5000/api/forgotforuser",{
+      response= await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/forgotforuser`,{
         userEmail:state.email
        })
        if(response.data.success){

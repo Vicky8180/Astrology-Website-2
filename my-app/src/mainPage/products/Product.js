@@ -18,13 +18,13 @@ import { useDispatch } from "react-redux";
 
 export default function Product() {
   const [data, setData] = useState([]);
-  const baseURL = "http://localhost:5000/";
+  const baseURL =`${process.env.REACT_APP_BASE_URL_PORT}/` || "http://localhost:5000/";
 
  
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/fetchservice");
+        const response = await axios.get(`${process.env.REACT_APP_BASE_URL_PORT}/api/fetchservice`);
         const initialData = response.data.data || [];
         const updatedData = await Promise.all(initialData.map(async (item) => {
           const updatedImage = await handleImageTransformation(item.image);

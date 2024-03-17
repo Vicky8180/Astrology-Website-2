@@ -63,7 +63,7 @@ setAbout('')
     formData.append('zipcode', zipcode);
     formData.append('instagram', instagram);
     
-       const data=  await axios.put('http://localhost:5000/api/editadmin',  formData, {
+       const data=  await axios.put(`${process.env.REACT_APP_BASE_URL_PORT}/api/editadmin`,  formData, {
       headers: {
         'Content-Type': 'multipart/form-data', // Set content type for FormData
       },

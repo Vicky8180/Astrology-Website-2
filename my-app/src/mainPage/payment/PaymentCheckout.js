@@ -49,9 +49,9 @@ minutes=tt[0].time;
 
       const {
         data: { key },
-      } = await axios.get("http://www.localhost:5000/api/getkey");
+      } = await axios.get(`${process.env.REACT_APP_BASE_URL_PORT}/api/getkey`);
 
-      const { data } = await axios.post("http://localhost:5000/api/checkout", {
+      const { data } = await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/checkout`, {
         amount: totalprice,
       });
       const queryString = `?name=${encodeURIComponent(
@@ -67,7 +67,7 @@ minutes=tt[0].time;
       )}&totalprice=${encodeURIComponent(
         totalprice
       )}&minutes=${encodeURIComponent(minutes)}`;
-      const verificationURL = `http://localhost:5000/api/paymentverification/${queryString}`;
+      const verificationURL = `${process.env.REACT_APP_BASE_URL_PORT}/api/paymentverification/${queryString}`;
       const options = {
         key: key,
         amount: data.order.amount,

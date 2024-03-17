@@ -167,7 +167,7 @@ const New = ({ inputs, title }) => {
       if (isEmptyField || !selectedHoroscope) {
         alert('Please fill all the inputs and select a horoscope');
       } else {
-        await axios.put('http://localhost:5000/api/horoupdate', {
+        await axios.put(`${process.env.REACT_APP_BASE_URL_PORT}/api/horoupdate`, {
 
         image:file,
           inEnglish: inputValues[2],

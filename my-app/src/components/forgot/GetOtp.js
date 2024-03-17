@@ -14,7 +14,7 @@ console.log()
  console.log(otp)
  const getOtp=async()=>{
 
-    const data= await axios.post('http://localhost:5000/api/otpmacting',{
+    const data= await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/otpmacting`,{
         otp:otp,
         adminEmail:email
     })
