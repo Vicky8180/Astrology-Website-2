@@ -17,7 +17,7 @@
 //     service: 'gmail',
 //     auth: {
 //       user: 'vyadav99x1@gmail.com',
-//       pass: 'qpmt ueop vpxn nrtd',
+//       pass: 'auqu sowp osbi cdnl',
 //     },
 //   });
 
@@ -82,6 +82,11 @@
 // });
 
 // module.exports = router;
+
+
+
+// COMMENTTED CODE IS WORKING NOT BELOW ONE BECAUSE OF {google} 
+
 
 
 

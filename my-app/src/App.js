@@ -36,6 +36,9 @@ import ChatUser from "./mainPage/login/UserChat"
 import StarterLogin from "./mainPage/login/UserLogin/StarterLogin"
 import SignUpOtp from "./mainPage/login/UserLogin/SignUpOtp"
 import Recharge from "./mainPage/recharge/Recharge";
+import SignInForgot from "./mainPage/login/loginforgot/SignInForgot"
+import ItsOto from "./mainPage/login/loginforgot/ItsOtp"
+import NewPassword from "./mainPage/login/loginforgot/NewPassword"
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -155,14 +158,18 @@ function App() {
     <Route path='/paymentsuccessfull' element={<PaymentSuccessfull />} />
     <Route path='/loginuser' element={userloggedIn ? <LoginUser /> : <FirstPage />} />
     <Route path='/transition' element={<Transition />} />
-    <Route path='/chatuser' element={<ChatUser />} />
+    <Route path='/chatuser' element={ userloggedIn ? <ChatUser /> : <><StarterLogin /></>}/>
     <Route path='/starterlogin' element={<StarterLogin />} />
     <Route path='/signupotp' element={<SignUpOtp />} />
     <Route path='/recharge' element={<Recharge />} />
+    <Route path='/signinforgot' element={<SignInForgot />} />
+    <Route path='/otpverification' element={<ItsOto />} />
+    <Route path='/newpassword' element={<NewPassword />} />
 
     <Route path="/admin/*">
   {isauth ? (
     <>
+    
       <Route index element={<Home />} />
       <Route path="list" element={<List />} />
       <Route path="new" element={<New inputs={userInputs} title="Add New User" />} />
@@ -176,7 +183,14 @@ function App() {
       <Route path="chat" element={<ChatAdmin />} />
     </>
   ) : (
-    <Route index element={<Login />} /> 
+    <Route path="login" >
+              <Route index  element={<Login />}/>
+              <Route path="forgot"  element={<Forgot />} />
+              <Route path="getotp" element={<GetOtp />} />
+              <Route path="changepassword" element={<ChangePassword />} />
+              </Route>
+
+   
   )}
 </Route>
 

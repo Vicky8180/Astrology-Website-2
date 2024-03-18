@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ec1d0089.css",
+    "main.js": "/static/js/main.e04dcc6f.js",
+    "static/media/smaal10.jpg": "/static/media/smaal10.e36546e2317372ca8387.jpg",
+    "static/media/small3.jpg": "/static/media/small3.2a6154552253a45a2834.jpg",
+    "static/media/small.jpg": "/static/media/small.93ceb24d6f9a6b450403.jpg",
+    "static/media/about.jpg": "/static/media/about.dd0f36fe27f74eacf73a.jpg",
+    "static/media/poster6.jpg": "/static/media/poster6.f8e08770f699bb5688b0.jpg",
+    "static/media/oplo.jpg": "/static/media/oplo.dec837933ae69e5a489e.jpg",
+    "static/media/finallogo.png": "/static/media/finallogo.0e209eace218a5a26787.png",
+    "static/media/Gemini.png": "/static/media/Gemini.3f4d1a6d1f08ee966dec.png",
+    "static/media/Taurus.png": "/static/media/Taurus.81fbbcf8f239cc0b1786.png",
+    "static/media/Virgo.png": "/static/media/Virgo.2a302da6400e7fb857ae.png",
+    "static/media/Cancer.png": "/static/media/Cancer.0bb1cc910571b4c308d6.png",
+    "static/media/Pisces.png": "/static/media/Pisces.95704d7e5d1743af1f15.png",
+    "static/media/Leo.png": "/static/media/Leo.afcf12721220aa895fa3.png",
+    "static/media/Sagitarious.png": "/static/media/Sagitarious.7cf49eeb1354ceb273d3.png",
+    "static/media/Capricon.png": "/static/media/Capricon.e3027f6b6ffdf22e108c.png",
+    "static/media/flags.png": "/static/media/flags.007b2705c0a8f69dfdf6.png",
+    "static/media/Aries.png": "/static/media/Aries.0869b50f9463f56962e5.png",
+    "static/media/Scorpio.png": "/static/media/Scorpio.8509ef8c63268f1bf788.png",
+    "static/media/Libra.png": "/static/media/Libra.b444accb3593bf74160a.png",
+    "static/media/smart-icons.eot": "/static/media/smart-icons.767f34dc7e3e613e9f80.eot",
+    "static/media/smart-icons.ttf": "/static/media/smart-icons.adf42f0319dd737a2dda.ttf",
+    "static/media/smart-icons.woff": "/static/media/smart-icons.9c3b3df041b606cdef5e.woff",
+    "static/media/smart-icons.woff2": "/static/media/smart-icons.f8bc682d88d729312dc3.woff2",
+    "static/media/Aquarious.png": "/static/media/Aquarious.563050a4e05ac7cac420.png",
+    "static/media/dropable_zone_image.svg": "/static/media/dropable_zone_image.6c65f7db21c9520078a4.svg",
+    "index.html": "/index.html",
+    "main.ec1d0089.css.map": "/static/css/main.ec1d0089.css.map",
+    "main.e04dcc6f.js.map": "/static/js/main.e04dcc6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec1d0089.css",
+    "static/js/main.e04dcc6f.js"
+  ]
+}

@@ -17,6 +17,9 @@ function SignInForm() {
     });
   };
   const navigate= useNavigate();
+const handleOnSubmit2=()=>{
+  navigate("/signinforgot")
+}
 
   const handleOnSubmit = async(evt) => {
     evt.preventDefault();
@@ -82,7 +85,7 @@ function SignInForm() {
           value={state.password}
           onChange={handleChange}
         />
-        <a className="aSignInUp" href="#">Forgot your password?</a>
+        <button className="aSignInUp"  onClick={handleOnSubmit2}>Forgot your password?</button>
         <button className="buttonSignInUp" onClick={handleOnSubmit}>Sign In</button>
       </form>
     </div>

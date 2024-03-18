@@ -3,6 +3,7 @@ import "./SingInUp.css";
 import SignInForm from "./SignIn";
 import SignUpForm from "./SignUp";
 
+
 export default function StarterLogin() {
   const [type, setType] = useState("signIn");
   const handleOnClick = text => {
@@ -15,7 +16,8 @@ export default function StarterLogin() {
     // "container " + (type === "signUp" ? "right-panel-active" : "");
     "containerSignInUp " + (type === "signUp" ? "right-panel-active" : "");
   return (
-    <div className="App">
+    <>
+<div className="App">
       <h2>Sign in/up Form</h2>
       <div className={containerClass} id="container">
         <SignUpForm />
@@ -50,5 +52,8 @@ export default function StarterLogin() {
         </div>
       </div>
     </div>
+    {/* <SignInForgot/> */}
+    </>
+    
   );
 }

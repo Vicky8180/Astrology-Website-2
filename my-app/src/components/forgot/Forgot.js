@@ -21,7 +21,7 @@ export default function Forgot() {
     if (data.data.success) {
       navigate("/admin/login/getotp", {state:{email}});
     }else {
-      alert(data.data.message)
+      alert("Network error")
     }
   };
 

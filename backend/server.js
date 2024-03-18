@@ -44,6 +44,8 @@ const SaveMessages = require("./router/chat/Message")
 const GetMessages = require("./router/chat/GetMessage")
 const UpdateUserAmount = require("./router/UserLogin/UpdateAmount")
 const Getindividualtrans = require("./router/transition/GetIndividualTrans")
+const PasswordConfirm = require("./router/PasswordConfirmUser")
+const GenerateOtp = require("./router/UserLogin/genrateotp")
 app.use(cors({
     origin: 'http://localhost:3000',
     credentials: true,
@@ -80,6 +82,8 @@ app.use('/api', SaveMessages);
 app.use('/api', GetMessages);
 app.use('/api', UpdateUserAmount);
 app.use('/api', Getindividualtrans);
+app.use('/api', PasswordConfirm);
+app.use('/api', GenerateOtp);
 
 app.get("/api/getkey", (req, res) =>
   res.status(200).json({ key: process.env.RAZORPAY_API_KEY })
@@ -101,9 +105,9 @@ const _dirname = path.dirname("");
 const buildpath = path.join(_dirname, "../my-app/build");
 app.use(express.static(buildpath));
 
-// app.get('/', function (req, res) {
-//   res.sendFile(path.join(__dirname, '../my-app/build', 'index.html'));
-// });
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, '../my-app/build', 'index.html'));
+});
 
 const server=app.listen(process.env.PORT || 5000,()=>{
     console.log("its running ")
