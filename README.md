@@ -6,6 +6,28 @@ Welcome to Astrology Chat Platform, a dynamic website designed to provide users 
 
 ## [Live here](https://astrologywithanoop.netlify.app/)
 
+## Some shorts of Website
+
+![services](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/9a2c51df-9c0c-4deb-b9ec-e176e6df9a2c)
+
+![paymentgateway](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/ec769685-602e-404a-bd49-f8bfab50af23)
+   
+   
+![recharge](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/49df0028-57b0-44ae-ac40-6d15e79c98cc)
+
+
+![chat](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/6f7e238f-4530-4819-bbad-a713c23527cc)
+
+## Admin Shorts
+
+
+![20 03 2024_03 05 10_REC](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/2265c359-4c9b-415a-a5a4-fc05493b7202)
+
+
+![20 03 2024_03 02 37_REC](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/5b2c27a4-d0a9-40a3-a3fe-9e00008e6eba)
+
+
+
 ## Key Features
 
 1. **Real-Time Astrologer Chat:**
@@ -39,21 +61,4 @@ To run the Astrology Chat Platform locally, follow these steps:
    ```bash
    npm install
 
-
-## Some shorts of Website
-
-1. **Payment Interface**
-   -![paymentgateway](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/ec769685-602e-404a-bd49-f8bfab50af23)
-   
-2. **Recharge Interface**
-   
-![recharge](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/49df0028-57b0-44ae-ac40-6d15e79c98cc)
-
-3. **Services Offer**
-
-   -![services](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/9a2c51df-9c0c-4deb-b9ec-e176e6df9a2c)
-
-4. **Chat Interface**
-
-  -   ![chat](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/6f7e238f-4530-4819-bbad-a713c23527cc)
 
