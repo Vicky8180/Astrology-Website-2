@@ -47,7 +47,8 @@ const Getindividualtrans = require("./router/transition/GetIndividualTrans")
 const PasswordConfirm = require("./router/PasswordConfirmUser")
 const GenerateOtp = require("./router/UserLogin/genrateotp")
 app.use(cors({
-    origin: 'http://localhost:3000',
+    // origin: 'http://localhost:3000',
+ origin :'https://astrologywithanoop.netlify.app/',
     credentials: true,
     
 }));
@@ -132,7 +133,8 @@ const server=app.listen(process.env.PORT || 5000,()=>{
 
 const io = socketIo(server, {
   cors: {
-    origin: `http://localhost:3000`,
+    // origin: `http://localhost:3000`,
+       origin: 'https://astrologywithanoop.netlify.app/',
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
