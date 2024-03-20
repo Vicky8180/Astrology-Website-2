@@ -21,9 +21,6 @@ Welcome to Astrology Chat Platform, a dynamic website designed to provide users 
 ## Admin Shorts
 
 
-![20 03 2024_03 05 10_REC](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/2265c359-4c9b-415a-a5a4-fc05493b7202)
-
-
 ![20 03 2024_03 02 37_REC](https://github.com/Vicky8180/Astrology-Website-2/assets/76256436/5b2c27a4-d0a9-40a3-a3fe-9e00008e6eba)
 
 
